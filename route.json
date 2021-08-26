@@ -1,5 +1,4 @@
-{
-    "Main": [
+[
         {
             "Routes": "R 1- Trikonbaug To Saurashtra University",
             "Bus1": "GJ 03 BT 0344",
@@ -322,4 +321,3 @@
             "Bus4": "GJ 03 AT 9623"
         }
     ]
-}
