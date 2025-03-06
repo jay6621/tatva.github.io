@@ -1,0 +1,21 @@
+NAME SERVER
+
+ns1.crazydomains.com (or Search For Domain Provider's default Name Servers)
+
+A RECORD
+
+NIL   or   @
+
+185.199.108.153
+185.199.109.153
+185.199.110.153
+185.199.111.153
+
+
+CNAME 
+
+www
+
+vishal-gosai.github.io
+
+username.github.io
