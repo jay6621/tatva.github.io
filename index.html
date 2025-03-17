@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tatva Technovation</title>
+    <!-- Add favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+    <!-- Import Materialize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .sidenav li>a,
+        #nav-mobile li>a {
+            color: #CC2527 !important;
+            font-weight: 700 !important;
+            /* Changed from 500 to 700 for bolder text */
+            font-size: 1.44rem !important;
+            /* Increased from 1.2rem by 20% */
+        }
+
+        /* Update nav height to accommodate larger logo */
+        nav {
+            height: 100px !important;
+            /* Increased from 85px */
+            line-height: 100px !important;
+        }
+
+        nav i,
+        nav [class^="mdi-"],
+        nav [class*="mdi-"],
+        nav i.material-icons {
+            height: 100px !important;
+            line-height: 100px !important;
+        }
+
+        nav .button-collapse i {
+            height: 100px !important;
+            line-height: 100px !important;
+        }
+
+        @media only screen and (min-width: 601px) {
+
+            nav,
+            nav .nav-wrapper i,
+            nav a.button-collapse,
+            nav a.button-collapse i {
+                height: 100px !important;
+                line-height: 100px !important;
+            }
+        }
+
+        /* Add styles for logo */
+        .brand-logo img {
+            height: 92px !important;
+            /* Increased from 77px by 20% */
+            padding: 5px;
+            margin-top: 2px;
+        }
+
+        /* Customize slider indicators */
+        .slider .indicators .indicator-item {
+            background-color: #e0e0e0 !important;
+        }
+
+        .slider .indicators .indicator-item.active {
+            background-color: #CC2527 !important;
+        }
+
+        /* Theme Color Utility Classes */
+        .theme-text {
+            color: #CC2527 !important;
+        }
+
+        .theme-bg {
+            background-color: #CC2527 !important;
+        }
+
+        .theme-bg-light {
+            background-color: #CC252720 !important;
+        }
+
+        /* Additional theme color styles */
+        nav.nav-theme {
+            background-color: #fbe9e9 !important;
+        }
+
+        .btn-floating.btn-large {
+            background-color: #CC2527 !important;
+        }
+
+        .btn-floating:hover {
+            background-color: #CC2527 !important;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="nav-theme">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="#" class="brand-logo">
+                        <img src="images/TATVA_LOGO.png" alt="TATVA TECHNOVATION" class="brand-logo img">
+                    </a>
+                    <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#clients">Clients</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <ul class="sidenav" id="mobile-nav">
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#clients">Clients</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </header>
+
+    <!-- Add this new slider section -->
+    <div class="slider">
+        <ul class="slides">
+            <li>
+                <img src="https://images.unsplash.com/photo-1518770660439-4636190af475" alt="Embedded Systems Development">
+                <div class="caption center-align">
+                    <h3>Embedded Systems Excellence</h3>
+                    <h5 class="light grey-text text-lighten-3">Innovative Solutions for Tomorrow's Technology</h5>
+                </div>
+            </li>
+            <li>
+                <img src="https://images.unsplash.com/photo-1611462985358-60d3498e0364" alt="Hardware Design">
+                <div class="caption left-align">
+                    <h3>Hardware Design</h3>
+                    <h5 class="light grey-text text-lighten-3">Custom Circuit Solutions</h5>
+                </div>
+            </li>
+            <li>
+                <img src="https://images.unsplash.com/photo-1518770660439-4636190af475" alt="IoT Solutions">
+                <div class="caption right-align">
+                    <h3>IoT Solutions</h3>
+                    <h5 class="light grey-text text-lighten-3">Connected Device Development</h5>
+                </div>
+            </li>
+            <li>
+                <img src="https://images.unsplash.com/photo-1563770660941-20978e870e26" alt="Firmware Development">
+                <div class="caption center-align">
+                    <h3>Firmware Development</h3>
+                    <h5 class="light grey-text text-lighten-3">Reliable Embedded Software</h5>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="theme-text">TATVA TECHNOVATION</h2>
+            <p class="flow-text">Welcome to Tatva Technovation - Your Complete Product Development Partner. We specialize in embedded systems development, delivering innovative solutions that bridge hardware and software. Our team of expert engineers and developers creates reliable, efficient, and cutting-edge embedded solutions for diverse industries.</p>
+
+            <div class="row">
+                <div class="col s12 m4">
+                    <div class="center-align">
+                        <i class="material-icons large theme-text">memory</i>
+                        <h5>Embedded Excellence</h5>
+                        <p>Specialized in embedded systems design and development</p>
+                    </div>
+                </div>
+                <div class="col s12 m4">
+                    <div class="center-align">
+                        <i class="material-icons large" style="color: #CC2527">developer_board</i>
+                        <h5>End-to-End Solutions</h5>
+                        <p>Complete product development from concept to deployment</p>
+                    </div>
+                </div>
+                <div class="col s12 m4">
+                    <div class="center-align">
+                        <i class="material-icons large" style="color: #CC2527">precision_manufacturing</i>
+                        <h5>Industry Expertise</h5>
+                        <p>Serving automotive, industrial, and IoT sectors</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="section">
+    <div class="container">
+        <h2 style="color: #CC2527">Our Services</h2>
+        <ul class="collection">
+            <li class="collection-item">Embedded Systems Development</li>
+            <li class="collection-item">Hardware Design & Prototyping</li>
+            <li class="collection-item">Firmware Development</li>
+            <li class="collection-item">IoT Solutions</li>
+            <li class="collection-item">Product Testing & Certification</li>
+        </ul>
+    </div>
+    </section>
+
+    <section id="expertise" class="section grey lighten-4">
+        <div class="container">
+            <h2 class="theme-text center-align">Our Expertise</h2>
+            <div class="row">
+                <div class="col s12">
+                    <p class="flow-text center-align">Comprehensive solutions across multiple domains</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12 m3">
+                    <div class="subsidiary-card">
+                        <div class="card-image">
+                            <i class="material-icons large theme-text">settings_input_antenna</i>
+                        </div>
+                        <div class="card-content center">
+                            <h5>IoT Solutions</h5>
+                            <p class="grey-text">Connected Device Development</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m3">
+                    <div class="subsidiary-card">
+                        <div class="card-image">
+                            <i class="material-icons large theme-text">electrical_services</i>
+                        </div>
+                        <div class="card-content center">
+                            <h5>Hardware Design</h5>
+                            <p class="grey-text">Circuit & PCB Design</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m3">
+                    <div class="subsidiary-card">
+                        <div class="card-image">
+                            <i class="material-icons large theme-text">memory</i>
+                        </div>
+                        <div class="card-content center">
+                            <h5>Firmware Development</h5>
+                            <p class="grey-text">Embedded Software</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m3">
+                    <div class="subsidiary-card">
+                        <div class="card-image">
+                            <i class="material-icons large theme-text">architecture</i>
+                        </div>
+                        <div class="card-content center">
+                            <h5>System Architecture</h5>
+                            <p class="grey-text">End-to-End Design</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Replace the testimonials section with this -->
+    <section id="clients" class="section">
+        <div class="container">
+            <h2 class="theme-text center-align">Our Clients</h2>
+            <div class="row">
+                <div class="col s12">
+                    <p class="flow-text center-align">Trusted by industry leaders in technology and innovation</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12 m3">
+                    <div class="card client-card">
+                        <div class="card-content center">
+                            <i class="material-icons large theme-text">computer</i>
+                            <h5>Tech Solutions Ltd</h5>
+                            <p class="grey-text">Consumer Electronics</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m3">
+                    <div class="card client-card">
+                        <div class="card-content center">
+                            <i class="material-icons large theme-text">electric_car</i>
+                            <h5>AutoTech Systems</h5>
+                            <p class="grey-text">Automotive Electronics</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m3">
+                    <div class="card client-card">
+                        <div class="card-content center">
+                            <i class="material-icons large theme-text">biotech</i>
+                            <h5>MedTech Innovations</h5>
+                            <p class="grey-text">Medical Devices</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m3">
+                    <div class="card client-card">
+                        <div class="card-content center">
+                            <i class="material-icons large theme-text">factory</i>
+                            <h5>Smart Factory Solutions</h5>
+                            <p class="grey-text">Industrial Automation</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section grey lighten-4">
+        <div class="container">
+            <h2 class="theme-text center-align">Contact Us</h2>
+            <div class="row">
+                <div class="col s12 m6">
+                    <div class="contact-card center">
+                        <i class="material-icons large theme-text">location_city</i>
+                        <h5>Office</h5>
+                        <p>Tatva Technovation</p>
+                        <p>4005, International Fashion Market,</p>
+                        <p>Puna gam, Surat,</p>
+                        <p>Gujarat 395010</p>
+                        <p>Phone: <a href="tel:+91 9638867563" class="theme-text">+91 9638867563</a></p>
+                        <p>Email: <a href="mailto:tatvatechnovation@gmail.com" class="theme-text">tatvatechnovation@gmail.com</a></p>
+                    </div>
+                </div>
+                <div class="col s12 m6">
+                    <div class="contact-card center">
+                        <i class="material-icons large theme-text">share</i>
+                        <h5>Connect with Us</h5>
+                        <div class="social-links">
+                            <a href="#" class="theme-text" target="_blank">
+                                <i class="fab fa-linkedin fa-2x m-2"></i>
+                            </a>
+                            <a href="#" class="theme-text" target="_blank">
+                                <i class="fab fa-github fa-2x m-2"></i>
+                            </a>
+                            <a href="#" class="theme-text" target="_blank">
+                                <i class="fab fa-twitter fa-2x m-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Add before footer -->
+    <div class="fixed-action-btn">
+        <a href="#" class="btn-floating btn-large theme-bg" id="moveToTop">
+            <i class="large material-icons">arrow_upward</i>
+        </a>
+    </div>
+
+    <footer class="page-footer theme-bg">
+        <div class="container center-align">
+            <p>&copy; 2024 TATVA TECHNOVATION. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Import Materialize JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        // Initialize Materialize JS components
+        document.addEventListener('DOMContentLoaded', function () {
+            // Sidenav initialization
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems);
+
+            // Close sidenav when a link is clicked
+            var sidenavLinks = document.querySelectorAll('.sidenav a');
+            sidenavLinks.forEach(function(link) {
+                link.addEventListener('click', function() {
+                    var instance = M.Sidenav.getInstance(document.querySelector('.sidenav'));
+                    instance.close();
+                });
+            });
+
+            // Slider initialization
+            var sliderElems = document.querySelectorAll('.slider');
+            var sliderInstances = M.Slider.init(sliderElems, {
+                indicators: true,
+                height: 600,
+                duration: 500,
+                interval: 4000,
+                pause: true,
+                transition: 1000,
+                direction: 'left'
+            });
+
+            // Move to top button functionality
+            var moveToTop = document.getElementById('moveToTop');
+
+            window.onscroll = function() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    moveToTop.style.display = "block";
+                } else {
+                    moveToTop.style.display = "none";
+                }
+            };
+
+            moveToTop.addEventListener('click', function(e) {
+                e.preventDefault();
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
